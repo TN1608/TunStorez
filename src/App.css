@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar {
+    width: 8px; /* Chiều rộng của thanh cuộn dọc */
+    height: 8px; /* Chiều cao của thanh cuộn ngang */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Nền thanh cuộn */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền thanh cuộn */
+    border-radius: 10px; /* Bo tròn các góc */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Tay nắm kéo thanh cuộn */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Màu tay nắm */
+    border-radius: 10px; /* Bo tròn các góc */
+    border: 2px solid #f1f1f1; /* Viền tạo không gian giữa tay nắm và nền */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Khi hover vào tay nắm */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Đổi màu khi hover */
+}
+.content .carousel-item .img-fluid {
+    filter: brightness(80%);
+}
+/**/
+.section2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section2 .card {
+    transition: 0.2s ease-in-out;
+    cursor: default;
 }
 
-.App-link {
-  color: #61dafb;
+.section2 .card img {
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section2 .card-title {
+    text-align: start;
+    cursor: pointer;
+}
+
+.section2 .card-text {
+    text-align: start;
+    cursor: text;
+}
+
+.section2 .card-title:hover {
+    color: #EF5A6F;
+}
+
+.section2 .card .morebtn {
+    color: #333333;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.section2 .card .morebtn:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
 }
