@@ -1,6 +1,6 @@
 import {ComponentPreview, Previews} from '@react-buddy/ide-toolbox'
 import {PaletteTree} from './palette'
-import Header from "../_header";
+import Header from "../fragment/_header";
 
 const ComponentPreviews = () => {
     return (

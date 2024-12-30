@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 
-function products(name, price){
+function Products({name, price}){
     return (
         <div className="card">
             <img src="./images/chair/DONO.jpg" id="anhsp" className="card-img-top" alt="..."/>
@@ -16,4 +16,4 @@ function products(name, price){
     )
 }
 
-export default products;
+export default Products;
